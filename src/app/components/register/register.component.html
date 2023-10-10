@@ -1,0 +1,19 @@
+<div class="d-flex justify-content-center align-items-center mt-5 vh-90">
+  <form class="row g-3" (submit)="createProduct($event)">
+    <div class="col-md-6">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Enter a name :">
+    </div>
+    <div class="col-md-6">
+      <label for="flavor" class="form-label">Description</label>
+      <input type="text" class="form-control" id="flavor" name="flavor" placeholder="Enter a description :" required>
+    </div>
+    <div class="col-12">
+      <label for="price" class="form-label">Price</label>
+      <input type="text" class="form-control" id="price" name="price" placeholder="Enter a price : $0.00">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-success" >Register Product</button>
+    </div>
+  </form>
+</div>
